@@ -220,7 +220,7 @@ int main(void)
     // Compile shader program
     unsigned int shaderID;
     shaderID = LoadShaders("vertexShader.glsl", "fragmentShader.glsl");
-
+ 
     // Load the textures
     unsigned int texture;
     texture = loadTexture("../assets/crate.jpg");
@@ -229,7 +229,7 @@ int main(void)
     glUseProgram(shaderID);
     unsigned int textureID;
     textureID = glGetUniformLocation(shaderID, "texture");
-    glUniform1i(textureID, 0);
+    glUniform1i(shaderID, 0);
 
 
     // Cube positions

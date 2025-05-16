@@ -7,9 +7,9 @@ in vec2 UV;
 out vec3 colour;
 
 // Uniforms
-uniform sampler2D textureMap;
+uniform sampler2D diffuseMap;
 
 void main()
 {
-    colour = vec3(texture(textureMap, UV));
+    colour = vec3(texture(diffuseMap, UV));
 }
